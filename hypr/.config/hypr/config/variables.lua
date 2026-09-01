@@ -7,8 +7,8 @@ EDITOR       = "gnome-text-editor --new-window"
 CALCULATOR   = "gnome-calculator"
 
 -- Monitors
-MONITOR1 = ""
-MONITOR2 = ""
+MONITOR1 = "eDP-1"
+MONITOR2 = "DP-1"
 MONITOR3 = ""
 PRIMARY_MONITOR = MONITOR1
 

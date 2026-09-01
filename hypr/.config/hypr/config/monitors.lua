@@ -13,3 +13,10 @@ hl.monitor({
     position  = "auto",
     scale     = 0.95
 })
+
+hl.monitor({
+    output    = MONITOR2,
+    mode      = "preferred",
+    position  = "auto",
+    scale     = 1.25
+})
