@@ -1,0 +1,9 @@
+[user]
+	name = Oatmeal4Breakfast
+	email = elvin.salcedo17@gmail.com
+[init]
+	defaultBranch = main
+[core]
+	editor = nvim
+[pull]
+	rebase = false
