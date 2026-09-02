@@ -23,4 +23,9 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # opencode
 export PATH=/home/thoughts/.opencode/bin:$PATH
 
+# text-editor
+export EDITOR="nvim"
+export VISUAL="nvim"
+
+# aliases
 alias lg="lazygit"
