@@ -12,6 +12,8 @@ directory is a stow package whose contents mirror `$HOME`.
 - `hypr/` — `.config/hypr` (Hyprland WM)
 - `btop/` — `.config/btop`
 - `tmux/` — `.config/tmux` (terminal multiplexer)
+- `ssh/` — `.ssh/config` (host aliases and key locations; private keys
+  themselves are never tracked in this repo)
 
 `install.sh` also installs a `cli-tools` group with no config to stow:
 `uv`, `ruff`, `node`, `npm`, `lazygit`, `just` via pacman; `bun` and `ty` via
@@ -37,7 +39,7 @@ Manual stow usage still works if you'd rather manage packages yourself:
 
 ```sh
 cd ~/dotfiles
-stow zsh git nvim ghostty hypr btop tmux   # symlink packages into $HOME
+stow zsh git nvim ghostty hypr btop tmux ssh   # symlink packages into $HOME
 stow -D zsh                           # remove a package's symlinks
 ```
 

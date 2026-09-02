@@ -25,6 +25,7 @@ declare -A DEPS=(
     [hypr]="hyprland xdg-desktop-portal-hyprland noctalia hyprpicker dolphin firefox gnome-text-editor gnome-calculator satty pavucontrol networkmanager qt6ct nwg-look"
     [btop]="btop"
     [tmux]="tmux"
+    [ssh]="openssh"
     [cli-tools]="uv ruff nodejs npm lazygit just git base-devel"
 )
 
@@ -32,7 +33,7 @@ declare -A DEPS=(
 # grab-bag of CLI tools. Most come from pacman (see DEPS above), but bun and
 # ty are installed via their own official installer scripts instead, to
 # match how they're actually managed on this machine (not pacman-owned).
-ALL_PACKAGES=(zsh git nvim ghostty hypr btop tmux cli-tools)
+ALL_PACKAGES=(zsh git nvim ghostty hypr btop tmux ssh cli-tools)
 
 log() { printf '==> %s\n' "$1"; }
 
