@@ -22,3 +22,5 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # opencode
 export PATH=/home/thoughts/.opencode/bin:$PATH
+
+alias lg="lazygit"
