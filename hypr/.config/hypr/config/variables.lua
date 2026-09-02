@@ -1,10 +1,10 @@
 -- Hyprland default apps
 
-TERMINAL     = "kitty"
+TERMINAL = "ghostty"
 FILE_MANAGER = "dolphin"
-BROWSER      = "firefox"
-EDITOR       = "gnome-text-editor --new-window"
-CALCULATOR   = "gnome-calculator"
+BROWSER = "firefox"
+EDITOR = "gnome-text-editor --new-window"
+CALCULATOR = "gnome-calculator"
 
 -- Monitors
 MONITOR1 = "eDP-1"

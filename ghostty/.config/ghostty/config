@@ -2,11 +2,11 @@
 # Location: ~/.config/ghostty/config
 
 # Font Configuration
-font-family = JetBrains Mono
+font-family = JetBrainsMono Nerd Font Mono
 font-size = 14
 
 # Theme
-theme = Kanagawa Wave 
+theme = Kanagawa Wave
 
 # Window Configuration
 window-decoration = none
@@ -28,7 +28,7 @@ window-height = 50
 # Keybindings
 # Note: Ghostty uses different modifier syntax:
 # - ctrl = Control
-# - cmd/super = Command (macOS) / Super (Linux)
+# - ctrl/super = Command (macOS) / Super (Linux)
 # - alt/opt = Option (macOS) / Alt (Linux)
 # - shift = Shift
 
@@ -39,14 +39,14 @@ window-height = 50
 keybind = opt+left=text:\x1bb
 keybind = opt+right=text:\x1bf
 
-# Open config file (cmd+comma is standard on macOS)
+# Open config file (ctrl+comma is standard on macOS)
 # Note: Ghostty doesn't support opening files directly in new tabs
 # Use your shell/editor to open the config instead
 
 # Split panes (using more standard bindings)
 # Ghostty uses different syntax than WezTerm's leader concept
-keybind = cmd+d=new_split:right
-keybind = cmd+shift+d=new_split:down
+keybind = ctrl+d=new_split:right
+keybind = ctrl+shift+d=new_split:down
 
 # Navigate between splits (using ctrl+hjkl like vim)
 keybind = ctrl+h=goto_split:left
@@ -61,13 +61,13 @@ keybind = ctrl+shift+k=resize_split:up,10
 keybind = ctrl+shift+l=resize_split:right,10
 
 # Tab management (standard macOS bindings work by default)
-# cmd+t for new tab
-# cmd+w to close tab
-# cmd+number to switch to specific tab
-# cmd+shift+[ and ] to navigate tabs
+# ctrl+t for new tab
+# ctrl+w to close tab
+# ctrl+number to switch to specific tab
+# ctrl+shift+[ and ] to navigate tabs
 
 # Close current split/pane
-keybind = cmd+w=close_surface
+keybind = ctrl+w=close_surface
 
 
 # ============================================================
