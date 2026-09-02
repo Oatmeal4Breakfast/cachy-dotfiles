@@ -14,9 +14,10 @@ directory is a stow package whose contents mirror `$HOME`.
 - `tmux/` — `.config/tmux` (terminal multiplexer)
 
 `install.sh` also installs a `cli-tools` group with no config to stow:
-`uv`, `ruff`, `node`, `npm`, `lazygit`, `just` via pacman, plus `bun` and
-`ty` via their own official installer scripts (not pacman-packaged the way
-they're used here).
+`uv`, `ruff`, `node`, `npm`, `lazygit`, `just` via pacman; `bun` and `ty` via
+their own official installer scripts (not pacman-packaged the way they're
+used here); and `yay`, built from the AUR in a throwaway temp dir since
+there's no pacman package for an AUR helper itself.
 
 ## Usage
 
@@ -28,6 +29,8 @@ real file it would otherwise conflict with to `~/.dotfiles-backup/<timestamp>/`:
 cd ~/dotfiles
 ./install.sh              # install + stow everything
 ./install.sh tmux nvim    # install + stow only the named packages
+./install.sh --audit      # list explicitly-installed packages not yet
+                           # declared in DEPS (read-only, changes nothing)
 ```
 
 Manual stow usage still works if you'd rather manage packages yourself:
