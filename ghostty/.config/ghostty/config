@@ -3,15 +3,15 @@
 
 # Font Configuration
 font-family = JetBrainsMono Nerd Font Mono
-font-size = 12
+font-size = 13
 
 # Theme
 theme = Kanagawa Wave
 
 # Window Configuration
 window-decoration = none
-window-padding-x = 0
-window-padding-y = 0
+window-padding-x = 10
+window-padding-y = 10
 
 # Disable desktop notifications from programs inside the terminal (e.g. the
 # OSC 9/777 escape sequences CLI tools like Claude Code send to notify when
