@@ -1,0 +1,12 @@
+[Unit]
+Description=Sync wallpapers daily via wallsync.sh
+
+[Timer]
+OnCalendar=*-*-* 09:00:00
+RandomizedDelaySec=30min
+FixedRandomDelay=true
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+

@@ -1,0 +1,6 @@
+[Unit]
+Description=Run the wallsync script
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/wallsync.sh
