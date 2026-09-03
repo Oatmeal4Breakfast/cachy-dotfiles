@@ -26,6 +26,7 @@ declare -A DEPS=(
     [btop]="btop"
     [tmux]="tmux"
     [ssh]="openssh"
+    [scripts]="rsync tailscale"
     [cli-tools]="uv ruff nodejs npm lazygit just git base-devel"
 )
 
@@ -33,7 +34,7 @@ declare -A DEPS=(
 # grab-bag of CLI tools. Most come from pacman (see DEPS above), but bun and
 # ty are installed via their own official installer scripts instead, to
 # match how they're actually managed on this machine (not pacman-owned).
-ALL_PACKAGES=(zsh git nvim ghostty hypr btop tmux ssh cli-tools)
+ALL_PACKAGES=(zsh git nvim ghostty hypr btop tmux ssh scripts cli-tools)
 
 log() { printf '==> %s\n' "$1"; }
 
@@ -136,6 +137,14 @@ for pkg in "${targets[@]}"; do
     log "Stowing $pkg"
     stow --restow "$pkg"
 done
+
+# scripts ships user systemd units alongside its ~/.local/bin executables -
+# enable/refresh them now that they're stowed.
+if [[ " ${targets[*]} " == *" scripts "* ]]; then
+    log "Enabling wallsync.timer"
+    systemctl --user daemon-reload
+    systemctl --user enable --now wallsync.timer
+fi
 
 [[ -d "$BACKUP_DIR" ]] && log "Backed up pre-existing files to $BACKUP_DIR"
 log "Done."
