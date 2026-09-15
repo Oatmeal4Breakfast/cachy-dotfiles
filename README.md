@@ -21,6 +21,9 @@ their own official installer scripts (not pacman-packaged the way they're
 used here); and `yay`, built from the AUR in a throwaway temp dir since
 there's no pacman package for an AUR helper itself.
 
+It also installs an `apps` group with no config to stow: `discord` and
+`spotify-launcher` via pacman, and `notion-app-electron` via `yay` (AUR).
+
 ## Usage
 
 On a fresh Arch/CachyOS machine, `install.sh` installs each package's
