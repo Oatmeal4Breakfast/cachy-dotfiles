@@ -109,6 +109,6 @@ keybind = opt+right=text:\x1bf
 #
 # ============================================================
 
-#custom-shader-animation = always
-#custom-shader = shaders/ghostty-cursor-trails/boo-cursor.glsl
+custom-shader-animation = always
+custom-shader = /home/thoughts/dotfiles/ghostty/.config/ghostty/shaders/boo-cursor.glsl
 
