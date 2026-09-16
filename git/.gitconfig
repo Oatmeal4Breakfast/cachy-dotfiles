@@ -1,9 +1,16 @@
 [user]
 	name = Oatmeal4Breakfast
 	email = elvin.salcedo17@gmail.com
+	signingkey = /home/thoughts/.ssh/id_github.pub
 [init]
 	defaultBranch = main
 [core]
 	editor = nvim
 [pull]
 	rebase = false
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[gpg "ssh"]
+	allowedSignersFile = /home/thoughts/.ssh/allowed_signers

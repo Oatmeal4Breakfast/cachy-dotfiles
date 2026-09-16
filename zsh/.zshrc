@@ -29,3 +29,5 @@ export VISUAL="nvim"
 
 # aliases
 alias lg="lazygit"
+
+alias git='nocorrect git'

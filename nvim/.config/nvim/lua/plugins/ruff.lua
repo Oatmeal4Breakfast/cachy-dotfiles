@@ -5,11 +5,6 @@ return {
     opts = {
       formatters_by_ft = {
         python = { "ruff_format" },
-        html = { "prettier" },
-        css = { "prettier" },
-        javascript = { "prettier" },
-        typescript = { "prettier" },
-        json = { "prettier" },
       },
     },
   },
