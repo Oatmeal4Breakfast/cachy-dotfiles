@@ -21,11 +21,12 @@ BACKUP_DIR="${HOME}/.dotfiles-backup/$(date +%Y%m%d-%H%M%S)"
 
 # Stow package name -> space-separated pacman package names it depends on.
 declare -A DEPS=(
-    [zsh]="zsh cachyos-zsh-config"
+    [zsh]="zsh starship zsh-autosuggestions zsh-syntax-highlighting zsh-history-substring-search pkgfile fzf"
     [git]="git"
     [nvim]="neovim ripgrep fd base-devel unzip"
     [ghostty]="ghostty ttf-jetbrains-mono-nerd"
     [hypr]="hyprland xdg-desktop-portal-hyprland noctalia hyprpicker dolphin firefox gnome-text-editor gnome-calculator satty pavucontrol networkmanager qt6ct nwg-look"
+    [uwsm]=""
     [btop]="btop"
     [tmux]="tmux"
     [ssh]="openssh"
@@ -44,7 +45,7 @@ declare -A AUR_DEPS=(
 # just grab-bags of programs. Most come from pacman (see DEPS above), but bun and
 # ty are installed via their own official installer scripts instead, to
 # match how they're actually managed on this machine (not pacman-owned).
-ALL_PACKAGES=(zsh git nvim ghostty hypr btop tmux ssh scripts cli-tools apps)
+ALL_PACKAGES=(zsh git nvim ghostty hypr uwsm btop tmux ssh scripts cli-tools apps)
 
 log() { printf '==> %s\n' "$1"; }
 

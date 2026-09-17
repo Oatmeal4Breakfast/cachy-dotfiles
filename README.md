@@ -5,11 +5,12 @@ directory is a stow package whose contents mirror `$HOME`.
 
 ## Layout
 
-- `zsh/` — `.zshrc` (CachyOS zsh config + powerlevel10k)
+- `zsh/` — `.zshrc` (standalone zsh, no oh-my-zsh/powerlevel10k) + `.config/starship.toml` (dir + git + duration prompt)
 - `git/` — `.gitconfig`
 - `nvim/` — `.config/nvim` (LazyVim)
 - `ghostty/` — `.config/ghostty` (terminal)
 - `hypr/` — `.config/hypr` (Hyprland WM)
+- `uwsm/` — `.config/uwsm/env` (Wayland session environment and cursor size)
 - `btop/` — `.config/btop`
 - `tmux/` — `.config/tmux` (terminal multiplexer)
 - `ssh/` — `.ssh/config` (host aliases and key locations; private keys
