@@ -61,6 +61,8 @@ alias jctl="journalctl -p 3 -xb"
 alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 alias ls="eza"
 alias cat="bat"
+alias pbcopy="wl-copy"
+alias pbpaste="wl-paste"
 
 export PATH="$HOME/.local/bin:$PATH"
 
